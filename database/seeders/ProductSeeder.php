@@ -16,14 +16,16 @@ class ProductSeeder extends Seeder
      */
     public function run()
     {
-        Product::insert(
-            [
-                'name' => 'Feggy',
-                'price' => 10000,
-                'stock' => 10,
-                'created_at' => Carbon::now(),
-                'updated_at' => Carbon::now(),
-            ]
-        );
+        // Product::insert(
+        //     [
+        //         'name' => 'Feggy',
+        //         'price' => 10000,
+        //         'stock' => 10,
+        //         'created_at' => Carbon::now(),
+        //         'updated_at' => Carbon::now(),
+        //     ]
+        // );
+
+        Product::factory(20)->create();
     }
 }
